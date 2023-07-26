@@ -9,6 +9,10 @@ body{
 :root{
     --main-color:#e9d9b3;
 }
+.header{
+    background: url('./main.png');
+    background-size: cover;
+}
 header{
     display:grid;
     grid-template-columns: repeat(12,minmax(0,1fr));
@@ -63,12 +67,8 @@ header::after{
 /* ------------------ main -----------------------  */
 .main{
     height: 600px;
-    background: url('./main.png');
-    background-size: cover;
     width: 100%;
     height: 700px;
-    position: absolute;
-    top: 0;
 }
 .container{
     margin: 0 auto;
@@ -152,11 +152,13 @@ margin: 0 4px 5px 4px;
     border-radius: 8px;
 }
 /* --------------------- presentation ------------------  */
+.presentation{
+    position: relative;
+}
 .presentation .content{
     height: 400px;
     background-color:#000c15;
-    position: absolute;
-    bottom: -400px; 
+    /* position: absolute; */
     display: flex;
 }
 .presentation .text{
@@ -191,8 +193,8 @@ margin: 0 4px 5px 4px;
 }
 .presentation button{
     position: absolute;
-    bottom: -390px;
-    left: 60px;
+    bottom: 10px;
+    left: 40px;
     margin-top: 15px;
     padding: 15px;
     background-color: transparent;
@@ -200,4 +202,151 @@ margin: 0 4px 5px 4px;
     border-radius: 8px;
     color: var(--main-color);
     text-transform: uppercase
+}
+.actualites{
+padding: 25px 0;
+background: url('./min-act.png');
+background-size: cover;
+position: relative;
+}
+.actualites h2{
+    text-align: center;
+    font-size: 25px;
+    color: var(--main-color);
+    text-transform: uppercase;
+
+}
+.actualites .boxs{
+    margin-top: 30px;
+    display: flex;
+    justify-content:center;
+}
+.actualites .boxs .box{
+    flex-basis: 300px;
+    margin: 15px;
+    position: relative;
+}
+.actualites .boxs .box img{
+  width: 100%;
+}
+.actualites .boxs .box .text{
+    position: absolute;
+    bottom: 0;
+    margin: 7px;
+    text-align: center;
+}
+.actualites .boxs .box .text h3{
+    color: var(--main-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+.actualites .boxs .box .text p{
+    color: white;
+    font-weight: normal;
+    font-size: 10px;
+}
+.actualites .bullets{
+    text-align: center;
+}
+.actualites .bullets span{
+    margin: 10px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+.actualites .bullets span.active::before{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    top: -5px;
+    left: -5px;
+}
+.actualites .bullets span.active{
+    background-color: var(--main-color);
+}
+.liens{
+    background-color: #09141c;
+    padding: 30px 0;
+}
+.liens .container{
+    display: flex;
+}
+.liens .box{
+    margin: 10px;
+    flex-basis: 30%;
+    color: white;
+}
+.liens .box h3{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.liens .box ul{
+    list-style: none;
+    margin-top: 40px;
+}
+.liens .box ul li{
+    margin: 8px 0;
+}
+.liens .box.social ul {
+    display: flex;
+    justify-content: start;
+}
+.liens .box.social ul li a{
+    color: white;
+    margin: 0 10px;
+
+}
+.mail{
+    display: flex;
+    background-color: #172128;
+    padding: 10px 0;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.mail .text{
+    color: white;
+    margin-right: 30px;
+}
+.mail .text h3{
+    font-weight: 200;
+}
+.mail .send{
+    position: relative;
+}
+.mail .send input{
+    padding: 10px;
+    background-color: #2d2d2d;
+    border: none;
+}
+.mail .send button{
+    padding:10px 30px;
+    border: none;
+    position: absolute;
+    background-color: #c09a78;
+}
+.mail .send button a{
+    color: white;
+
+}
+footer{
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
 }
