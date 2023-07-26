@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+:root{
+    --main-color:#e9d9b3;
+}
+header{
+    display:grid;
+    grid-template-columns: repeat(12,minmax(0,1fr));
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    font-weight: 400;
+    font-size: 18px;
+}
+header ul{
+    list-style: none;
+    grid-column: 2/6;
+    display: flex;
+}
+header ul li{
+    margin-right: 20px;
+    color: var(--main-color);
+}
+header .lang{
+    grid-column: 11/12;
+}
+head .lang h5{
+    color: var(--main-color);
+}
+header .social{
+    grid-column: 12/13;
+}
+header .social a{
+    color: var(--main-color);
+    margin-right: 10px;
+    
+}
+header .social a i{
+    font-size: 12px;
+    border: 1px solid var(--main-color);
+    padding: 5px;
+    border-radius: 50%;
+}
