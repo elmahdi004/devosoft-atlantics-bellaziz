@@ -17,9 +17,7 @@ header nav li{
     color: var(--main-color);
     font-weight: 400;
 }
-header nav a{
 
-}
 header nav .social a{
 position: relative;
 padding: 4px;
