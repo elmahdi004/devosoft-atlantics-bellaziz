@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#f3e2ba;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    background-color: #020d15;
+}
+header nav li{
+    margin: 0 15px;
+    color: var(--main-color);
+    font-weight: 400;
+}
+header nav a{
+
+}
+header nav .social a{
+position: relative;
+padding: 4px;
+margin: 0 8px;
+color: var(--main-color);
+
+}
+header nav button span{
+    color: var(--main-color);
+}
+header nav .social a::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 1.5px solid var(--main-color);
+    border-radius: 50%;
+    top: 0px;
+    left: -2px;
+}
+header nav::after{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 1.5px;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: -100px;
+}
+header .lang{
+    color: var(--main-color);
+}
+/* --------------------------- */
+header .propos{
+    width: 70%;
+    position: relative;
+    z-index: 100
+}
+header .propos-layer{
+    background:url('./main.png') ;
+    background-size: cover;
+    position: relative;
+}
+header .propos-layer::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #020d15;
+    opacity: 0.3;
+}
+header .propos .box{
+padding-bottom: 20px;
+}
+header .propos .box p{
+    color: white;
+    line-height: 1.5;
+    font-size: 12px;
+    margin: 15px 0;
+
+}
+header .propos .box h3{
+    color: var(--main-color);
+    font-size: 26px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 15px;
+}
+header .propos .box h6{
+    padding: 10px 0;
+    color: white;
+    font-size: 15px;
+}
+header .propos .box img{
+    width: 150px;
+}
+.liens{
+    background-color: #09141c;
+    padding: 30px 0;
+}
+.liens .container{
+    display: flex;
+}
+.liens .box{
+    margin: 10px;
+    flex-basis: 30%;
+    color: white;
+}
+.liens .box h3{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.liens .box ul{
+    list-style: none;
+    margin-top: 40px;
+}
+.liens .box ul li{
+    margin: 8px 0;
+}
+.liens .box.social ul {
+    display: flex;
+    justify-content: start;
+}
+.liens .box.social ul li a{
+    color: white;
+    margin: 0 10px;
+
+}
+.mail{
+    display: flex;
+    background-color: #172128;
+    padding: 10px 0;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.mail .text{
+    color: white;
+    margin-right: 30px;
+}
+.mail .text h3{
+    font-weight: 200;
+}
+.mail .send{
+    position: relative;
+}
+.mail .send input{
+    padding: 10px;
+    background-color: #2d2d2d;
+    border: none;
+}
+.mail .send button{
+    padding:10px 30px;
+    border: none;
+    position: absolute;
+    background-color: #c09a78;
+}
+.mail .send button a{
+    color: white;
+
+}
+footer{
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
